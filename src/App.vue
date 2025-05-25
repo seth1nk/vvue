@@ -46,7 +46,7 @@ export default {
   methods: {
     async checkAuth() {
       try {
-        const response = await fetch('http://localhost:3000/auth/check', {
+        const response = await fetch('https://vnode.onrender.com/auth/check', {
           method: 'GET',
           credentials: 'include',
         });
@@ -71,7 +71,7 @@ export default {
     },
     async logout() {
       try {
-        const response = await fetch('http://localhost:3000/auth/logout', {
+        const response = await fetch('https://vnode.onrender.com/auth/logout', {
           method: 'GET',
           credentials: 'include',
         });
